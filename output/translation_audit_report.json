@@ -1,0 +1,289 @@
+{
+  "pipeline_version": "1.0.0",
+  "results": [
+    {
+      "source_path": "data\\sample_engineering_doc_en.md",
+      "target_language": "fr",
+      "output_path": "output\\sample_engineering_doc_fr.md",
+      "final_score": 100.0,
+      "passed": true,
+      "syntax_integrity_verified": true,
+      "protected_blocks_count": 41,
+      "ast_summary": {
+        "headings": 6,
+        "tables": 2,
+        "fenced_code_blocks": 2,
+        "indented_code_blocks": 0,
+        "html_blocks": 3,
+        "paragraphs": 14,
+        "lists": 0
+      },
+      "iterations": [
+        {
+          "iteration": 1,
+          "score": 18.0,
+          "passed": false,
+          "token_integrity_rate": 100.0,
+          "terminology_precision": 56.0,
+          "source_terms_detected": 25,
+          "mandatory_terms_matched": 14,
+          "forbidden_terms_found": 9,
+          "observations": [
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'fuite thermique' used for 'thermal runaway'.",
+              "term_id": "TERM-002",
+              "expected": "emballement thermique",
+              "found": "fuite thermique",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'Casseur de circuit' used for 'circuit breaker'.",
+              "term_id": "TERM-004",
+              "expected": "disjoncteur logiciel",
+              "found": "Casseur de circuit",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'queue de lettres décédées' used for 'dead-letter queue'.",
+              "term_id": "TERM-005",
+              "expected": "file de lettres mortes",
+              "found": "queue de lettres décédées",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'pression arrière' used for 'backpressure'.",
+              "term_id": "TERM-006",
+              "expected": "contre-pression",
+              "found": "pression arrière",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'Minuterie de chien' used for 'watchdog timer'.",
+              "term_id": "TERM-009",
+              "expected": "temporisateur chien de garde",
+              "found": "Minuterie de chien",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation \"tampon d'anneau\" used for 'ring buffer'.",
+              "term_id": "TERM-010",
+              "expected": "tampon circulaire",
+              "found": "tampon d'anneau",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'serrure morte' used for 'deadlock'.",
+              "term_id": "TERM-011",
+              "expected": "interblocage",
+              "found": "serrure morte",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'condition de course' used for 'race condition'.",
+              "term_id": "TERM-012",
+              "expected": "situation de compétition",
+              "found": "condition de course",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'Tremblement' used for 'jitter'.",
+              "term_id": "TERM-021",
+              "expected": "gigue",
+              "found": "Tremblement",
+              "penalty": 8.0
+            },
+            {
+              "code": "UNTRANSLATED_TERM",
+              "severity": "major",
+              "message": "English source term 'cold start' was left untranslated.",
+              "term_id": "TERM-008",
+              "expected": "démarrage à froid",
+              "found": "cold start",
+              "penalty": 5.0
+            },
+            {
+              "code": "UNTRANSLATED_TERM",
+              "severity": "major",
+              "message": "English source term 'checksum' was left untranslated.",
+              "term_id": "TERM-025",
+              "expected": "somme de contrôle",
+              "found": "checksum",
+              "penalty": 5.0
+            }
+          ]
+        },
+        {
+          "iteration": 2,
+          "score": 100.0,
+          "passed": true,
+          "token_integrity_rate": 100.0,
+          "terminology_precision": 100.0,
+          "source_terms_detected": 25,
+          "mandatory_terms_matched": 25,
+          "forbidden_terms_found": 0,
+          "observations": []
+        }
+      ]
+    },
+    {
+      "source_path": "data\\sample_engineering_doc_en.md",
+      "target_language": "es",
+      "output_path": "output\\sample_engineering_doc_es.md",
+      "final_score": 100.0,
+      "passed": true,
+      "syntax_integrity_verified": true,
+      "protected_blocks_count": 41,
+      "ast_summary": {
+        "headings": 6,
+        "tables": 2,
+        "fenced_code_blocks": 2,
+        "indented_code_blocks": 0,
+        "html_blocks": 3,
+        "paragraphs": 14,
+        "lists": 0
+      },
+      "iterations": [
+        {
+          "iteration": 1,
+          "score": 18.0,
+          "passed": false,
+          "token_integrity_rate": 100.0,
+          "terminology_precision": 56.0,
+          "source_terms_detected": 25,
+          "mandatory_terms_matched": 14,
+          "forbidden_terms_found": 9,
+          "observations": [
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'fuga térmica' used for 'thermal runaway'.",
+              "term_id": "TERM-002",
+              "expected": "embalamiento térmico",
+              "found": "fuga térmica",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'Rompedor de circuito' used for 'circuit breaker'.",
+              "term_id": "TERM-004",
+              "expected": "interruptor de circuito",
+              "found": "Rompedor de circuito",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'cola de cartas muertas' used for 'dead-letter queue'.",
+              "term_id": "TERM-005",
+              "expected": "cola de mensajes fallidos",
+              "found": "cola de cartas muertas",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'presión trasera' used for 'backpressure'.",
+              "term_id": "TERM-006",
+              "expected": "contrapresión",
+              "found": "presión trasera",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'Reloj vigilante' used for 'watchdog timer'.",
+              "term_id": "TERM-009",
+              "expected": "temporizador perro guardián",
+              "found": "Reloj vigilante",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'búfer de anillo' used for 'ring buffer'.",
+              "term_id": "TERM-010",
+              "expected": "búfer circular",
+              "found": "búfer de anillo",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'cerradura muerta' used for 'deadlock'.",
+              "term_id": "TERM-011",
+              "expected": "interbloqueo",
+              "found": "cerradura muerta",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'condición de raza' used for 'race condition'.",
+              "term_id": "TERM-012",
+              "expected": "condición de carrera",
+              "found": "condición de raza",
+              "penalty": 8.0
+            },
+            {
+              "code": "FORBIDDEN_TERM_USED",
+              "severity": "major",
+              "message": "Forbidden translation 'Temblor' used for 'jitter'.",
+              "term_id": "TERM-021",
+              "expected": "fluctuación de retardo",
+              "found": "Temblor",
+              "penalty": 8.0
+            },
+            {
+              "code": "UNTRANSLATED_TERM",
+              "severity": "major",
+              "message": "English source term 'cold start' was left untranslated.",
+              "term_id": "TERM-008",
+              "expected": "arranque en frío",
+              "found": "cold start",
+              "penalty": 5.0
+            },
+            {
+              "code": "UNTRANSLATED_TERM",
+              "severity": "major",
+              "message": "English source term 'checksum' was left untranslated.",
+              "term_id": "TERM-025",
+              "expected": "suma de comprobación",
+              "found": "checksum",
+              "penalty": 5.0
+            }
+          ]
+        },
+        {
+          "iteration": 2,
+          "score": 100.0,
+          "passed": true,
+          "token_integrity_rate": 100.0,
+          "terminology_precision": 100.0,
+          "source_terms_detected": 25,
+          "mandatory_terms_matched": 25,
+          "forbidden_terms_found": 0,
+          "observations": []
+        }
+      ]
+    }
+  ]
+}

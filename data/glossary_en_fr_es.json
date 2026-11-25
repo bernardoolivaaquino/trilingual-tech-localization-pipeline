@@ -1,0 +1,282 @@
+{
+  "version": "1.0.0",
+  "domain": "aerospace_telemetry_and_control",
+  "languages": ["en", "fr", "es"],
+  "terms": [
+    {
+      "id": "TERM-001",
+      "domain": "telemetry",
+      "en": "telemetry pipeline",
+      "en_aliases": ["telemetry pipelines"],
+      "fr": "chaîne de télémétrie",
+      "es": "canalización de telemetría",
+      "forbidden_fr": ["tuyau de télémétrie", "pipeline télémétrique"],
+      "forbidden_es": ["tubería de telemetría", "oleoducto de telemetría"],
+      "notes": "End-to-end telemetry acquisition and ingestion flow."
+    },
+    {
+      "id": "TERM-002",
+      "domain": "thermal",
+      "en": "thermal runaway",
+      "en_aliases": [],
+      "fr": "emballement thermique",
+      "es": "embalamiento térmico",
+      "forbidden_fr": ["fuite thermique", "course thermique"],
+      "forbidden_es": ["fuga térmica", "carrera térmica"],
+      "notes": "Uncontrolled positive thermal feedback loop."
+    },
+    {
+      "id": "TERM-003",
+      "domain": "reliability",
+      "en": "fault tolerance",
+      "en_aliases": [],
+      "fr": "tolérance aux pannes",
+      "es": "tolerancia a fallos",
+      "forbidden_fr": ["tolérance de faute", "tolérance aux fautes"],
+      "forbidden_es": ["tolerancia de faltas", "tolerancia a culpas"],
+      "notes": "Ability to continue operating under component failure."
+    },
+    {
+      "id": "TERM-004",
+      "domain": "reliability",
+      "en": "circuit breaker",
+      "en_aliases": ["circuit breakers"],
+      "fr": "disjoncteur logiciel",
+      "es": "interruptor de circuito",
+      "forbidden_fr": ["casseur de circuit", "briseur de circuit"],
+      "forbidden_es": ["rompedor de circuito", "cortacircuitos de software"],
+      "notes": "Resilience pattern isolating failing downstream services."
+    },
+    {
+      "id": "TERM-005",
+      "domain": "messaging",
+      "en": "dead-letter queue",
+      "en_aliases": ["dead letter queue", "dead-letter queues"],
+      "fr": "file de lettres mortes",
+      "es": "cola de mensajes fallidos",
+      "forbidden_fr": ["queue de lettres décédées", "file morte"],
+      "forbidden_es": ["cola de cartas muertas", "fila de letras muertas"],
+      "notes": "Queue storing messages that failed repeated processing."
+    },
+    {
+      "id": "TERM-006",
+      "domain": "streaming",
+      "en": "backpressure",
+      "en_aliases": ["back-pressure"],
+      "fr": "contre-pression",
+      "es": "contrapresión",
+      "forbidden_fr": ["pression arrière", "pression de dos"],
+      "forbidden_es": ["presión trasera", "presión de espalda"],
+      "notes": "Flow-control signal slowing upstream producers."
+    },
+    {
+      "id": "TERM-007",
+      "domain": "distributed_systems",
+      "en": "idempotency key",
+      "en_aliases": ["idempotency keys"],
+      "fr": "clé d'idempotence",
+      "es": "clave de idempotencia",
+      "forbidden_fr": ["touche d'idempotence", "clef idempotente"],
+      "forbidden_es": ["llave de idempotencia", "tecla de idempotencia"],
+      "notes": "Unique token guaranteeing at-most-once state mutation."
+    },
+    {
+      "id": "TERM-008",
+      "domain": "runtime",
+      "en": "cold start",
+      "en_aliases": ["cold starts"],
+      "fr": "démarrage à froid",
+      "es": "arranque en frío",
+      "forbidden_fr": ["début froid", "commencement froid"],
+      "forbidden_es": ["inicio frío", "comienzo helado"],
+      "notes": "System initialization without warm cache or preloaded state."
+    },
+    {
+      "id": "TERM-009",
+      "domain": "embedded",
+      "en": "watchdog timer",
+      "en_aliases": ["watchdog timers"],
+      "fr": "temporisateur chien de garde",
+      "es": "temporizador perro guardián",
+      "forbidden_fr": ["minuterie de chien", "horloge de garde"],
+      "forbidden_es": ["reloj vigilante", "cronómetro de guardia"],
+      "notes": "Hardware/software timer triggering reset if not refreshed."
+    },
+    {
+      "id": "TERM-010",
+      "domain": "data_structures",
+      "en": "ring buffer",
+      "en_aliases": ["ring buffers"],
+      "fr": "tampon circulaire",
+      "es": "búfer circular",
+      "forbidden_fr": ["tampon d'anneau", "mémoire bague"],
+      "forbidden_es": ["búfer de anillo", "amortiguador anular"],
+      "notes": "Fixed-capacity circular FIFO memory buffer."
+    },
+    {
+      "id": "TERM-011",
+      "domain": "concurrency",
+      "en": "deadlock",
+      "en_aliases": ["deadlocks"],
+      "fr": "interblocage",
+      "es": "interbloqueo",
+      "forbidden_fr": ["serrure morte", "verrou mort"],
+      "forbidden_es": ["cerradura muerta", "bloqueo mortal"],
+      "notes": "Circular wait blocking concurrent execution threads."
+    },
+    {
+      "id": "TERM-012",
+      "domain": "concurrency",
+      "en": "race condition",
+      "en_aliases": ["race conditions"],
+      "fr": "situation de compétition",
+      "es": "condición de carrera",
+      "forbidden_fr": ["condition de course", "état de course"],
+      "forbidden_es": ["condición de raza", "estado de carrera"],
+      "notes": "Timing-dependent nondeterministic shared-state hazard."
+    },
+    {
+      "id": "TERM-013",
+      "domain": "control",
+      "en": "closed-loop control",
+      "en_aliases": ["closed loop control"],
+      "fr": "commande en boucle fermée",
+      "es": "control en lazo cerrado",
+      "forbidden_fr": ["contrôle de boucle close", "pilotage fermé"],
+      "forbidden_es": ["control de bucle cerrado", "control de aro cerrado"],
+      "notes": "Feedback-driven control architecture."
+    },
+    {
+      "id": "TERM-014",
+      "domain": "control",
+      "en": "steady-state error",
+      "en_aliases": ["steady state error"],
+      "fr": "erreur en régime permanent",
+      "es": "error en estado estacionario",
+      "forbidden_fr": ["erreur d'état stable", "faute stationnaire"],
+      "forbidden_es": ["error de estado firme", "fallo estable"],
+      "notes": "Residual asymptotic error between setpoint and output."
+    },
+    {
+      "id": "TERM-015",
+      "domain": "thermal",
+      "en": "heat flux",
+      "en_aliases": [],
+      "fr": "flux thermique",
+      "es": "flujo de calor",
+      "forbidden_fr": ["flux de chaleur", "courant chaud"],
+      "forbidden_es": ["flujo caliente", "corriente térmica"],
+      "notes": "Thermal energy transfer rate per unit area (W/m^2)."
+    },
+    {
+      "id": "TERM-016",
+      "domain": "thermal",
+      "en": "thermal conductivity",
+      "en_aliases": [],
+      "fr": "conductivité thermique",
+      "es": "conductividad térmica",
+      "forbidden_fr": ["conductibilité de chaleur", "conduction chaude"],
+      "forbidden_es": ["conductibilidad de calor", "conducción térmica"],
+      "notes": "Material property k in Fourier's law (W/(m*K))."
+    },
+    {
+      "id": "TERM-017",
+      "domain": "propulsion",
+      "en": "specific impulse",
+      "en_aliases": [],
+      "fr": "impulsion spécifique",
+      "es": "impulso específico",
+      "forbidden_fr": ["poussée spécifique", "élan spécifique"],
+      "forbidden_es": ["empuje específico", "estímulo específico"],
+      "notes": "Propellant efficiency metric I_sp in seconds."
+    },
+    {
+      "id": "TERM-018",
+      "domain": "estimation",
+      "en": "sensor fusion",
+      "en_aliases": [],
+      "fr": "fusion de capteurs",
+      "es": "fusión de sensores",
+      "forbidden_fr": ["fusion sensorielle", "mélange de senseurs"],
+      "forbidden_es": ["fusión sensorial", "mezcla de captadores"],
+      "notes": "Combining heterogeneous sensor measurements into a unified estimate."
+    },
+    {
+      "id": "TERM-019",
+      "domain": "estimation",
+      "en": "state estimator",
+      "en_aliases": ["state estimators"],
+      "fr": "estimateur d'état",
+      "es": "estimador de estado",
+      "forbidden_fr": ["évaluateur de statut", "devineur d'état"],
+      "forbidden_es": ["evaluador de estatus", "calculador de situación"],
+      "notes": "Filter (e.g., Kalman filter) inferring latent system state."
+    },
+    {
+      "id": "TERM-020",
+      "domain": "signal_processing",
+      "en": "sampling rate",
+      "en_aliases": ["sampling rates"],
+      "fr": "fréquence d'échantillonnage",
+      "es": "frecuencia de muestreo",
+      "forbidden_fr": ["taux d'échantillon", "vitesse de prélèvement"],
+      "forbidden_es": ["tasa de muestra", "ritmo de muestreo"],
+      "notes": "Acquisition frequency in Hz."
+    },
+    {
+      "id": "TERM-021",
+      "domain": "signal_processing",
+      "en": "jitter",
+      "en_aliases": [],
+      "fr": "gigue",
+      "es": "fluctuación de retardo",
+      "forbidden_fr": ["tremblement", "nervosité"],
+      "forbidden_es": ["temblor", "nerviosismo"],
+      "notes": "Timing variance of periodic telemetry frames."
+    },
+    {
+      "id": "TERM-022",
+      "domain": "telemetry",
+      "en": "payload",
+      "en_aliases": ["payloads"],
+      "fr": "charge utile",
+      "es": "carga útil",
+      "forbidden_fr": ["charge payante", "paquet de paie"],
+      "forbidden_es": ["carga pagada", "carga de pago"],
+      "notes": "Useful mission or packet data carried by a vehicle or frame."
+    },
+    {
+      "id": "TERM-023",
+      "domain": "safety",
+      "en": "fail-safe mode",
+      "en_aliases": ["fail safe mode"],
+      "fr": "mode de sécurité intégrée",
+      "es": "modo a prueba de fallos",
+      "forbidden_fr": ["mode sûr d'échec", "mode sans échec"],
+      "forbidden_es": ["modo seguro de falla", "modo sin fallos"],
+      "notes": "Safe fallback operating state upon critical fault."
+    },
+    {
+      "id": "TERM-024",
+      "domain": "embedded",
+      "en": "firmware image",
+      "en_aliases": ["firmware images"],
+      "fr": "image micrologicielle",
+      "es": "imagen de firmware",
+      "forbidden_fr": ["image ferme", "photo de firmware"],
+      "forbidden_es": ["imagen firme", "imagen de software duro"],
+      "notes": "Signed binary artifact flashed to flight/controller MCU."
+    },
+    {
+      "id": "TERM-025",
+      "domain": "integrity",
+      "en": "checksum",
+      "en_aliases": ["checksums"],
+      "fr": "somme de contrôle",
+      "es": "suma de comprobación",
+      "forbidden_fr": ["vérification de chèque", "somme de vérification"],
+      "forbidden_es": ["verificación de cheque", "suma de chequeo"],
+      "notes": "CRC or digest validating frame integrity."
+    }
+  ]
+}

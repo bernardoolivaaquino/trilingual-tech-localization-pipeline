@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trilingual-tech-localization-pipeline"
+version = "1.0.0"
+description = "Multi-agent EN->FR/ES technical documentation localization and auditing pipeline with deterministic Markdown AST + regex syntax protection."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [
+  { name = "Bernardo Oliva Aquino" }
+]
+keywords = [
+  "localization",
+  "technical-documentation",
+  "multi-agent",
+  "markdown-ast",
+  "latex",
+  "terminology-audit",
+  "pydantic",
+]
+dependencies = [
+  "pydantic>=2.0",
+  "markdown-it-py>=3.0",
+  "typer>=0.12",
+  "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+llm = [
+  "openai>=1.40",
+  "google-genai>=1.0",
+  "anthropic>=0.40",
+]
+
+[project.scripts]
+trilingual-localize = "src.pipeline:app"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"

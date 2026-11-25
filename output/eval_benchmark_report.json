@@ -1,0 +1,45 @@
+{
+  "benchmark": "sample_engineering_doc_en.md",
+  "glossary": "glossary_en_fr_es.json",
+  "pass_threshold": 95.0,
+  "languages": [
+    {
+      "language": "fr",
+      "terms_in_source": 25,
+      "before_score": 18.0,
+      "after_score": 100.0,
+      "score_delta": 82.0,
+      "before_terminology_precision": 56.0,
+      "after_terminology_precision": 100.0,
+      "precision_delta": 44.0,
+      "before_forbidden_violations": 9,
+      "after_forbidden_violations": 0,
+      "before_token_integrity": 100.0,
+      "after_token_integrity": 100.0,
+      "iterations_required": 2
+    },
+    {
+      "language": "es",
+      "terms_in_source": 25,
+      "before_score": 18.0,
+      "after_score": 100.0,
+      "score_delta": 82.0,
+      "before_terminology_precision": 56.0,
+      "after_terminology_precision": 100.0,
+      "precision_delta": 44.0,
+      "before_forbidden_violations": 9,
+      "after_forbidden_violations": 0,
+      "before_token_integrity": 100.0,
+      "after_token_integrity": 100.0,
+      "iterations_required": 2
+    }
+  ],
+  "aggregate": {
+    "avg_before_score": 18.0,
+    "avg_after_score": 100.0,
+    "avg_before_terminology_precision": 56.0,
+    "avg_after_terminology_precision": 100.0,
+    "total_before_forbidden_violations": 18,
+    "total_after_forbidden_violations": 0
+  }
+}
